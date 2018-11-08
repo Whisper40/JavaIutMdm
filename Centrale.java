@@ -11,21 +11,21 @@ class Centrale{
     nb = 0;
   }
 
-  public void mesureValeur(){
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Saisir Valeur : ");
-    double val = sc.nextLine();
-    tempreleve = val;
-  }
-
-  public double transfertTemp(){
+  public void demandeValeur(capteur CP){
 
   }
 
-  public double returnVmin(){
-    return Vmin;
+  public double transfertTB(TB ){
+
   }
 
-  public double returnVmax(){
-    return Vmax;
+  public void stockageValeur(double temp, capteur cp, heure date){
+    temperature[nb] = temp;
+    CP[nb] = cp;
+    heure[nb] = date;
+    nb++;
+  }
+
+  public void verifVal(double temp){
+    
   }

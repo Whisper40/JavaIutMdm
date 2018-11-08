@@ -4,7 +4,7 @@ class CP{
   private double tempreleve;
   private int ref;
   private double Vmin;
-  private double Vmin;
+  private double Vmax;
 
   public CP(int Ref, double ValMin, double ValMax){
     ref = Ref;
@@ -21,7 +21,7 @@ class CP{
   }
 
   public double transfertTemp(){
-
+    
   }
 
   public double returnVmin(){
