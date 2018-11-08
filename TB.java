@@ -4,6 +4,12 @@ class TB{
   private int ref;
 }
 
+public TB(int reference){
+  capteurAssocie = new capteur[100];
+  ref = reference;
+  nb = 0;
+}
+
 public void demandeMesure(){
   //Communique
 }
