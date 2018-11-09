@@ -12,7 +12,6 @@ class Centrale{
   }
 
   public void demandeValeur(CP cap){
-    cap.mesureVale=table[i]) break ; ur();
     cap.transfertTemp();
   }
 

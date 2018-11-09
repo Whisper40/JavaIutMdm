@@ -23,7 +23,7 @@ class CP{
   }
 
   public double transfertTemp(){
-    raccordcentre.stockageValeur(this, tempreleve, !!!date);
+    raccordcentre.stockageValeur(this, tempreleve);
   }
 
   public double returnVmin(){
