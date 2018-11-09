@@ -1,11 +1,14 @@
 class TB{
-  private capteur[] capteurAssocie;
+  private CP[] capteurAssocie;
   private int nb;
   private int ref;
+  private Centrale raccordcentre;
 
-  public TB(int reference){
-    capteurAssocie = new capteur[100];
+  public TB(Centrale centre, int reference){
+    capteurAssocie = new CP[100];
+    raccordcentre = centre;
     ref = reference;
+
     nb = 0;
   }
 
@@ -13,13 +16,12 @@ class TB{
     //Communique
   }
 
-
   public void recupValeurAffichage(double Val){
     System.out.println("La température est "+Val+ "°C");
   }
 
-  public void ajoutCapteur(capteur CP){
-    capteurAssocie[nb] = CP;
+  public void ajoutCapteur(CP cp){
+    capteurAssocie[nb] = cp;
     nb++;
   }
 
