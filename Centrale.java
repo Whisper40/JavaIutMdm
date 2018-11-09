@@ -37,7 +37,7 @@ class Centrale{
     cp[longtemp] = cap;
     //heure[longtemp] = date;
     longtemp++;
-    verifVal();
+    this.verifVal(cap, temp);
   }
 
   public void verifVal(CP cap, double temp){
