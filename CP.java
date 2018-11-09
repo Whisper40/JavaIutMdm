@@ -22,7 +22,7 @@ class CP{
     tempreleve = val;
   }
 
-  public double transfertTemp(){
+  public void transfertTemp(){
     raccordcentre.stockageValeur(this, tempreleve);
   }
 
