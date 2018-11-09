@@ -7,7 +7,7 @@ class TB{
 
   public TB(CP capt, Centrale centre, int reference){
     //capteurAssocie = new CP[100];
-    capteursssocie = capt;
+    capteurassocie = capt;
     raccordcentre = centre;
     ref = reference;
     //nb = 0;
