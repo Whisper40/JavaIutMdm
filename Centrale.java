@@ -38,3 +38,4 @@ class Centrale{
   //public void verifVal(double temp){
 
   //}
+}
