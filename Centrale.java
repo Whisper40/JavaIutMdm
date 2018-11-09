@@ -7,12 +7,12 @@ class Centrale{
   public Centrale(){
     temperature = new double[100];
     cp = new CP[100];
-    time = new heure[100];
+    //time = new heure[100];
     nb = 0;
   }
 
   public void demandeValeur(CP cap){
-    cap.mesureValeur();
+    cap.mesureVale=table[i]) break ; ur();
     cap.transfertTemp();
   }
 
