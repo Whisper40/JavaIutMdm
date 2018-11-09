@@ -1,31 +1,36 @@
 class TB{
-  private CP[] capteurAssocie;
-  private int nb;
+  //private CP[] capteurAssocie;
+  private CP capteurassocie;
+  //private int nb;
   private int ref;
   private Centrale raccordcentre;
 
-  public TB(Centrale centre, int reference){
-    capteurAssocie = new CP[100];
+  public TB(CP capt, Centrale centre, int reference){
+    //capteurAssocie = new CP[100];
+    capteursssocie = capt;
     raccordcentre = centre;
     ref = reference;
-
-    nb = 0;
+    //nb = 0;
   }
 
   public void demandeMesure(){
-    //Communique
+    raccordcentre.transfertTB(this);
   }
 
-  public void recupValeurAffichage(double Val){
+  public void recupValeurPourAffichage(double Val){
     System.out.println("La température est "+Val+ "°C");
   }
 
-  public void ajoutCapteur(CP cp){
-    capteurAssocie[nb] = cp;
-    nb++;
-  }
+  //public void ajoutCapteur(CP cp){
+    //capteurAssocie[nb] = cp;
+    //nb++;
+  //}
 
   public int returnRefTB(){
     return ref;
+  }
+
+  public CP returnCapteur(){
+    return capteurassocie;
   }
 }
