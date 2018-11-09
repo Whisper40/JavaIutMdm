@@ -18,7 +18,7 @@ class CP{
   public void mesureValeur(){
     Scanner sc = new Scanner(System.in);
     System.out.println("Saisir Valeur : ");
-    double val = sc.nextLine();
+    double val = sc.nextDouble ();
     tempreleve = val;
   }
 
