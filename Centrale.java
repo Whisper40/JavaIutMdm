@@ -35,6 +35,6 @@ class Centrale{
     nb++;
   }
 
-  public void verifVal(double temp){
+  //public void verifVal(double temp){
 
-  }
+  //}
