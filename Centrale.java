@@ -42,7 +42,7 @@ class Centrale{
 
   public void verifVal(CP cap, double temp){
     int nb = 0;
-    while(nb = 0){
+    while(nb == 0){
       TB tbtab = tb[i];
       CP capteur = tbtab.returnCapteur();
       if (capteur == cap){
