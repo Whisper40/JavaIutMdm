@@ -9,8 +9,10 @@ class Centrale{
   public Centrale(){
     temperature = new double[100];
     cp = new CP[100];
+    tb = new TB[100];
     //time = new heure[100];
     longtemp = 0;
+    longtb = 0;
   }
 
   public void demandeValeur(CP cap){
@@ -54,4 +56,7 @@ class Centrale{
     }
   }
 
+  public void addTB(TB tdb){
+    tb[longtb] = tdb;
+  }
 }
