@@ -21,7 +21,7 @@ class Centrale{
     double temp;
     for(int i=0; i<nb; i++){
       CP captabl = cp[i];
-      if (caprecup = captabl){
+      if (caprecup == captabl){
         temp = temperature[i];
       }
     }
@@ -30,7 +30,7 @@ class Centrale{
 
   public void stockageValeur(CP cap, double temp){
     temperature[nb] = temp;
-    CP[nb] = cap;
+    cp[nb] = cap;
     //heure[nb] = date;
     nb++;
   }
