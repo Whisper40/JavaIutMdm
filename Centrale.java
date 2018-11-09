@@ -12,6 +12,7 @@ class Centrale{
   }
 
   public void demandeValeur(CP cap){
+    cap.mesureValeur();
     cap.transfertTemp();
   }
 
