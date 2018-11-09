@@ -5,8 +5,10 @@ class CP{
   private int ref;
   private double Vmin;
   private double Vmax;
+  private Centrale raccordcentre;
 
-  public CP(int Ref, double ValMin, double ValMax){
+  public CP(Centrale centre, int Ref, double ValMin, double ValMax){
+    raccordcentre = centre;
     ref = Ref;
     Vmin = ValMin;
     Vmax = ValMax;
@@ -21,7 +23,7 @@ class CP{
   }
 
   public double transfertTemp(){
-    
+    raccordcentre.stockageValeur(this, tempreleve, !!!date);
   }
 
   public double returnVmin(){
