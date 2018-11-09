@@ -18,7 +18,7 @@ class Centrale{
 
   public void transfertTB(TB tb){
     CP caprecup = tb.returnCapteur();
-    double temp;
+    double temp = 0;
     for(int i=0; i<nb; i++){
       CP captabl = cp[i];
       if (caprecup == captabl){
