@@ -33,4 +33,8 @@ class CP{
   public double returnVmax(){
     return Vmax;
   }
+
+  public int returnRef(){
+    return ref;
+  }
 }
