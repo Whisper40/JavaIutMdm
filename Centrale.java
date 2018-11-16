@@ -26,7 +26,7 @@ class Centrale{
 
   public void timer(){
     Timer timer = new Timer();
-    timer.schedule(this.demandevaleur(cp[1]), 0, 5000);
+    timer.schedule(new this.demandevaleur(cp[1]), 0, 5000);
   }
 
   public String date(){
