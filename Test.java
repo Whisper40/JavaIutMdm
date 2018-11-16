@@ -16,6 +16,5 @@ class Test{
     centre.addTB(tb);
     centre.demandeValeur(cp);
     tb.demandeLaValeur();
-    tb.demandeMesure();
   }
 }
