@@ -14,6 +14,6 @@ class Test{
     tb = new TB(cp, centre, ref2);
 
     centre.addTB(tb);
-    tb.demandeMesure()
+    tb.demandeMesure();
   }
 }
