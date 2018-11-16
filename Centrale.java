@@ -43,18 +43,20 @@ class Centrale{
   public void verifVal(CP cap, double temp){
     int nb = 0;
     int a = 0;
+    TB tdb;
     while(nb == 0){
       TB tbtab = tb[a];
       CP capteur = tbtab.returnCapteur();
       a++;
       if (capteur == cap){
+        tdb = tbtab;
         nb = 1;
       }
     }
     double Vmin = cap.returnVmin();
     double Vmax = cap.returnVmax();
     if (temp < Vmin || temp > Vmax){
-      tbtab.recupValeurPourAffichage(temp);
+      tdb.recupValeurPourAffichage(temp);
     }
   }
 
