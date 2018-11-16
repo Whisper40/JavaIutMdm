@@ -22,8 +22,8 @@ class TB{
     raccordcentre.transfertTB(this);
   }
 
-  public void recupValeurPourAffichage(double Val){
-    System.out.println("La température est "+Val+ "°C");
+  public void recupValeurPourAffichage(double Val, String date){
+    System.out.println("La température relevée le "+date+" est de "+Val+ "°C");
   }
 
   //public void ajoutCapteur(CP cp){

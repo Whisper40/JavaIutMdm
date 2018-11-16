@@ -1,7 +1,11 @@
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
 class Centrale{
   private double[] temperature;
   private CP[] cp;
-  //private heure[] time;
+  private String[] date;
   private int longtemp;
   private TB[] tb;
   private int longtb;
@@ -10,9 +14,15 @@ class Centrale{
     temperature = new double[100];
     cp = new CP[100];
     tb = new TB[100];
-    //time = new heure[100];
+    date = new String[100];
     longtemp = 0;
     longtb = 0;
+  }
+
+  public String date(){
+    DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
+    Date dateobj = new Date();
+    return df.format(dateobj);
   }
 
   public void demandeValeur(CP cap){
@@ -23,24 +33,27 @@ class Centrale{
   public void transfertTB(TB tb){
     CP caprecup = tb.returnCapteur();
     double temp = 0;
+    String dateheure = 0;
     for(int i=0; i<longtemp; i++){
       CP captabl = cp[i];
       if (caprecup == captabl){
         temp = temperature[i];
+        dateheure = date[i];
       }
     }
-    tb.recupValeurPourAffichage(temp);
+    tb.recupValeurPourAffichage(temp, dateheure);
   }
 
   public void stockageValeur(CP cap, double temp){
     temperature[longtemp] = temp;
     cp[longtemp] = cap;
-    //heure[longtemp] = date;
+    String dateheure = this.date();
+    date[longtemp] = dateheure;
     longtemp++;
-    this.verifVal(cap, temp);
+    this.verifVal(cap, temp, dateheure);
   }
 
-  public void verifVal(CP cap, double temp){
+  public void verifVal(CP cap, double temp, String dateheure){
     int nb = 0;
     int a = 0;
     TB tdb = null;
@@ -56,7 +69,7 @@ class Centrale{
     double Vmin = cap.returnVmin();
     double Vmax = cap.returnVmax();
     if (temp < Vmin || temp > Vmax){
-      tdb.recupValeurPourAffichage(temp);
+      tdb.recupValeurPourAffichage(temp, dateheure);
     }
   }
 
