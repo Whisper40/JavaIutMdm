@@ -13,7 +13,7 @@ class TB{
     //nb = 0;
   }
 
-  public void demandeValeur(){
+  public void azerty(){
     raccordcentre.transfertTB(this);
   }
 
