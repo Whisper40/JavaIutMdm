@@ -13,7 +13,7 @@ class TB{
     //nb = 0;
   }
 
-  public void demandeMesure(){
+  public void demandeValeur(){
     raccordcentre.transfertTB(this);
   }
 
