@@ -14,11 +14,12 @@ class TB{
   }
 
   public void demandeMesure(){
+    raccordcentre.demandeValeur(capteurassocie);
     raccordcentre.transfertTB(this);
   }
 
   //public void demandeMesure(){
-  //  raccordcentre.demandeValeur(capteurassocie);
+  // raccordcentre.demandeValeur(capteurassocie);
     //raccordcentre.transfertTB(this);
   //}
 
