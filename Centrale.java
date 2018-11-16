@@ -43,13 +43,12 @@ class Centrale{
   public void verifVal(CP cap, double temp){
     int nb = 0;
     int a = 0;
-    TB tdb=null;
+    TB tdb = null;
     while(nb == 0){
       TB tbtab = tb[a];
       CP capteur = tbtab.returnCapteur();
       a++;
       if (capteur == cap) {
-        System.out.println("match");
         tdb = tbtab;
         nb = 1;
       }
