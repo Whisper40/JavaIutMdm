@@ -27,7 +27,7 @@ class Centrale{
   public void timer(){
     Timer timer = new Timer();
     CP cp1 = cp[1];
-    TimerTask task = new demandevaleur(cp1);
+    TimerTask task = this.demandevaleur(cp1);
     timer.schedule(task, 0, 5000);
   }
 
