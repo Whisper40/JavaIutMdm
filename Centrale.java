@@ -4,7 +4,8 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
 //import des fonctionalité pour la mise en place d'un timer
-
+import java.util.TimerTask;
+import java.util.Timer;
 
 class Centrale{
   private double[] temperature;
@@ -23,7 +24,10 @@ class Centrale{
     longtb = 0;
   }
 
-  public
+  public void timer(){
+    Timer timer = new Timer();
+    timer.schedule(demandevaleur(cp[1]), 0, 5000);
+  }
 
   public String date(){
     DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
