@@ -18,10 +18,9 @@ class TB{
     raccordcentre.transfertTB(this);
   }
 
-  //public void demandeMesure(){
-  // raccordcentre.demandeValeur(capteurassocie);
-    //raccordcentre.transfertTB(this);
-  //}
+  public void demandeLastValeur(){
+    raccordcentre.transfertTB(this);
+  }
 
   public void recupValeurPourAffichage(double Val){
     System.out.println("La température est "+Val+ "°C");
