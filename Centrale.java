@@ -33,7 +33,7 @@ class Centrale{
   public void transfertTB(TB tb){
     CP caprecup = tb.returnCapteur();
     double temp = 0;
-    String dateheure = 0;
+    String dateheure = '0';
     for(int i=0; i<longtemp; i++){
       CP captabl = cp[i];
       if (caprecup == captabl){
