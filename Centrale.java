@@ -48,7 +48,8 @@ class Centrale{
       TB tbtab = tb[a];
       CP capteur = tbtab.returnCapteur();
       a++;
-      if (capteur == cap){
+      if (capteur == cap) {
+        System.out.println("match");
         tdb = tbtab;
         nb = 1;
       }
