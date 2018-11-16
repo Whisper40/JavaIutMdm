@@ -1,6 +1,10 @@
+//import des fonctionalité pour récupération de la date et l'heure
 import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+
+//import des fonctionalité pour la mise en place d'un timer
+
 
 class Centrale{
   private double[] temperature;
@@ -18,6 +22,8 @@ class Centrale{
     longtemp = 0;
     longtb = 0;
   }
+
+  public
 
   public String date(){
     DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
