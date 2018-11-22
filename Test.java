@@ -9,12 +9,12 @@ class Test{
     CP cp;
     cp = new CP(centre, ref, valmin, valmax);
 
-    int ref2 = 2;
+    int ref2 = 1;
     int time = 10000;
     TB tb;
     tb = new TB(cp, time, centre, ref2);
 
-    int ref3 = 10;
+    int ref3 = 2;
     double valmin1 = 10;
     double valmax1 = 20;
     CP cp2;
