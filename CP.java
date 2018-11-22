@@ -18,6 +18,11 @@ class CP{
     tempreleve = 0;
   }
 
+  public void timer(int tim){
+    Timer timer = new Timer();
+    TimerTask task = new Get(this);
+    timer.schedule(task, 0, tim);
+  }
 
   public void mesureValeur(){
     Random rand = new Random();

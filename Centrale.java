@@ -24,12 +24,6 @@ class Centrale{
     longtb = 0;
   }
 
-  public void timer(CP cap, int tim){
-    Timer timer = new Timer();
-    TimerTask task = new Get(this, cap);
-    timer.schedule(task, 0, tim);
-  }
-
   public String date(){
     DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
     Date dateobj = new Date();

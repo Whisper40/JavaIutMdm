@@ -4,15 +4,14 @@ import java.util.Timer;
 
 class Get extends TimerTask{
   private CP capteur;
-  private Centrale centrale;
 
-  public Get(Centrale centre,CP cap){
+  public Get(CP cap){
     super();
     capteur = cap;
-    centrale = centre;
   }
 
   public void run(){
-    centrale.demandeValeur(capteur);
+    capteur.mesureValeur();
+    capteur.transfertTemp();
   }
 }

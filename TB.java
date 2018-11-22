@@ -10,7 +10,7 @@ class TB{
     ref = reference;
     raccordcentre = centre;
     raccordcentre.addTB(this);
-    raccordcentre.timer(capteurassocie, timer);
+    capteurassocie.timer(timer);
   }
 
   public void demandeMesure(){
@@ -23,7 +23,7 @@ class TB{
   }
 
   public void recupValeurPourAffichage(double Val, String date){
-    System.out.println("La température relevée le "+date+"par le capteur "+ref+" est de "+Val+ "°C");
+    System.out.println("La température relevée le "+date+" par le TB "+ref+" est de "+Val+ "°C");
   }
 
   //public void ajoutCapteur(CP cp){
