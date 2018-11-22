@@ -26,7 +26,6 @@ class Centrale{
 
   public void timer(){
     Timer timer = new Timer();
-    //Reprendre ici
     TB tb1 = tb[0];
     CP cp1 = tb1.returnCapteur();
     TimerTask task = new Get(this, cp1);
