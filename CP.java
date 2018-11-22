@@ -21,7 +21,7 @@ class CP{
 
   public void mesureValeur(){
     Random rand = new Random();
-    int val = -10 + (rand.nextInt() * ((30 + 10) + 1));
+    int val = rand.nextInt();
     tempreleve = val;
   }
 
