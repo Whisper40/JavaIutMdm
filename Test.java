@@ -13,8 +13,9 @@ class Test{
     TB tb;
     tb = new TB(cp, centre, ref2);
 
+    centre.addTB(tb);
+
     centre.timer();
-    //centre.addTB(tb);
     //centre.demandeValeur(cp);
     //tb.demandeMesure();
     tb.demandeLastValeur();
