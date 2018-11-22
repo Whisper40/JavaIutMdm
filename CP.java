@@ -21,7 +21,7 @@ class CP{
 
   public void mesureValeur(){
     Random rand = new Random();
-    int val = rand.nextInt(40) - 10;
+    int val = rand.nextInt(40) - 10; //Valeur comprise entre -10 et 30
     tempreleve = val;
   }
 

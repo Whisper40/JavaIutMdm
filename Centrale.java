@@ -24,12 +24,10 @@ class Centrale{
     longtb = 0;
   }
 
-  public void timer(){
+  public void timer(CP cap, int tim){
     Timer timer = new Timer();
-    TB tb1 = tb[0];
-    CP cp1 = tb1.returnCapteur();
-    TimerTask task = new Get(this, cp1);
-    timer.schedule(task, 0, 5000);
+    TimerTask task = new Get(this, cap);
+    timer.schedule(task, 0, tim);
   }
 
   public String date(){

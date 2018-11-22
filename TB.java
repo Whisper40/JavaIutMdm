@@ -1,16 +1,16 @@
 class TB{
-  //private CP[] capteurAssocie;
   private CP capteurassocie;
-  //private int nb;
   private int ref;
   private Centrale raccordcentre;
+  private int timer;
 
-  public TB(CP capt, Centrale centre, int reference){
-    //capteurAssocie = new CP[100];
+  public TB(CP capt, int time, Centrale centre, int reference){
     capteurassocie = capt;
-    raccordcentre = centre;
+    timer = time;
     ref = reference;
-    //nb = 0;
+    raccordcentre = centre;
+    raccordcentre.addTB(this);
+    raccordcentre.timer(capteurassocie, timer);
   }
 
   public void demandeMesure(){
