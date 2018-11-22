@@ -12,7 +12,7 @@ class CP{
     ref = Ref;
     Vmin = ValMin;
     Vmax = ValMax;
-    tempreleve = 2;
+    tempreleve = 0;
   }
 
   public void mesureValeur(){

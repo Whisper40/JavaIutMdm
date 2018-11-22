@@ -47,14 +47,17 @@ class Centrale{
     CP caprecup = tb.returnCapteur();
     double temp = 0;
     String dateheure = "0";
+    int long = longtemp-1;
     for(int i=0; i<longtemp; i++){
       CP captabl = cp[i];
       if (caprecup == captabl){
         temp = temperature[i];
         dateheure = date[i];
       }
+      if (i == long){
+        tb.recupValeurPourAffichage(temp, dateheure);
+      }
     }
-    tb.recupValeurPourAffichage(temp, dateheure);
   }
 
   public void stockageValeur(CP cap, double temp){
