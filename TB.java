@@ -23,7 +23,7 @@ class TB{
   }
 
   public void recupValeurPourAffichage(double Val, String date){
-    System.out.println("La température relevée le "+date+" est de "+Val+ "°C");
+    System.out.println("La température relevée le "+date+"par le capteur "+ref+" est de "+Val+ "°C");
   }
 
   //public void ajoutCapteur(CP cp){
