@@ -1,5 +1,8 @@
 import java.util.Scanner;
 import java.util.*;
+
+import java.util.Random;
+
 class CP{
   private double tempreleve;
   private int ref;
@@ -15,12 +18,19 @@ class CP{
     tempreleve = 0;
   }
 
+
   public void mesureValeur(){
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Saisir Valeur : ");
-    double val = sc.nextDouble ();
+    Random rand = new Random();
+    int val = -10 + (rand.nextInt() * ((30 + 10) + 1));
     tempreleve = val;
   }
+
+  //public void mesureValeur(){
+    //Scanner sc = new Scanner(System.in);
+    //System.out.println("Saisir Valeur : ");
+    //double val = sc.nextDouble ();
+    //tempreleve = val;
+  //}
 
   public void transfertTemp(){
     raccordcentre.stockageValeur(this, tempreleve);
