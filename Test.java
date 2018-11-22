@@ -10,9 +10,10 @@ class Test{
     cp = new CP(centre, ref, valmin, valmax);
 
     int ref2 = 2;
-    int time = 5000;
+    int time = 30000;
     TB tb;
     tb = new TB(cp, time, centre, ref2);
 
+    tb.demandeLastValeur();
   }
 }
