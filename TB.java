@@ -10,7 +10,7 @@ class TB{
     ref = reference;
     raccordcentre = centre;
     raccordcentre.addTB(this);
-    //capteurassocie.timer(timer);
+    capteurassocie.timer(timer);
   }
 
   public void demandeMesure(){
