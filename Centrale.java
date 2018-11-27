@@ -31,8 +31,9 @@ class Centrale{
   }
 
   public void demandeValeur(CP cap){
+    int ver = 0;
     cap.mesureValeur();
-    cap.transfertTemp();
+    cap.transfertTemp(ver);
   }
 
   public void transfertTB(TB tb){
@@ -52,13 +53,15 @@ class Centrale{
     }
   }
 
-  public void stockageValeur(CP cap, double temp){
+  public void stockageValeur(CP cap, double temp, int verif){
     temperature[longtemp] = temp;
     cp[longtemp] = cap;
     String dateheure = this.date();
     date[longtemp] = dateheure;
     longtemp++;
-    this.verifVal(cap, temp, dateheure);
+    if (verif == 1){
+      this.verifVal(cap, temp, dateheure);
+    }
   }
 
   public void verifVal(CP cap, double temp, String dateheure){

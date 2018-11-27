@@ -37,8 +37,8 @@ class CP{
     //tempreleve = val;
   //}
 
-  public void transfertTemp(){
-    raccordcentre.stockageValeur(this, tempreleve);
+  public void transfertTemp(int ver){
+    raccordcentre.stockageValeur(this, tempreleve, ver);
   }
 
   public double returnVmin(){
