@@ -16,10 +16,10 @@ class Centrale{
   private int longtb;
 
   public Centrale(){
-    temperature = new double[100];
-    cp = new CP[100];
-    tb = new TB[100];
-    date = new String[100];
+    temperature = new double[1000];
+    cp = new CP[1000];
+    tb = new TB[1000];
+    date = new String[1000];
     longtemp = 0;
     longtb = 0;
   }
